@@ -4,33 +4,34 @@
    <title>about Harry Potter!</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script>
+  function setColor(color){
+    var alist = document.querySelectorAll('a');
+    var i = 0;
+    while(i < alist.length){
+      alist[i].style.color = color;
+      i = i + 1;
+      }
+  }
+  function nightDayHandler(self){
+    var target = document.querySelector('.java');
+    if(self.value === 'night'){
+      target.style.backgroundColor = 'black';
+      target.style.color = 'white';
+      self.value = 'day';
+      setColor('powderblue');
+      } else {
+      target.style.backgroundColor = 'white';
+      target.style.color = 'black'
+      self.value = 'night';
+      setColor('gray');
+      }
+  }
+  </script>
  </head>
  <body id=java>
-   <input type="button" value="night" onclick="
-    var target = document.querySelector('.java');
-    if (this.value === 'night'){
-       target.style.backgroundColor = 'black';
-       target.style.color = 'white';
-       this.value = 'day';
-
-       var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'powderblue';
-          i = i + 1;
-        }
-     } else {
-       target.style.backgroundColor = 'white';
-       target.style.color = 'black'
-       this.value = 'night';
-
-       var alist = document.querySelectorAll('a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'gray';
-          i = i + 1;
-        }
-     }
+   <input id="night_day" type="button" value="night" onclick="
+      nightDayHandler(this);
     ">
    <h1><a href="index.html">Harry Potter</a></h1>
   <div id="grid">
@@ -46,11 +47,11 @@
         He was the only child and son of James and Lily Potter (née Evans), both members of the original Order of the Phoenix.<br><br>
         Harry's birth was overshadowed by a prophecy, naming either himself or Neville Longbottom(<img src="nevil.jpg" width="7%">) is the one with the power to vanquish Lord Voldemort.<br><br>
         was an English half-blood wizard, one of the most famous wizards of modern times.<br><br>
-        After half of the prophecy was reported to Voldemort courtesy of Severus Snape(<img src="svr.jpg" width="5%">), Harry was chosen as the target due to his many similarities with the Dark Lord(<img src="vldmrt.jpg" width="5%">).<br><br>
+        After half of the prophecy was reported to Voldemort courtesy of Severus Snape, Harry was chosen as the target due to his many similarities with the Dark Lord(<img src="vldmrt.jpg" width="5%">).<br><br>
         This caused the Potter family to go into hiding.<br><br>
         Voldemort made his first vain attempt to circumvent the prophecy when Harry was a year and three months old.<br><br>
         During this attempt, he murdered Harry's parents as they tried to protect him, but this unsuccessful attempt to kill Harry led to Voldemort's first downfall.<br><br>
-        This downfall marked the end of the First Wizarding War, and to Harry henceforth being known as the "Boy Who Lived", as he was the only known survivor of the Killing Curse.<br><br><br><br>
+        This downfall marked the end of the First Wizarding War,and to Harry henceforth being known as the "Boy Who Lived", as he was the only known survivor of the Killing Curse.<br><br><br><br>
              <h3>Minister Hermione Jean Granger</h3> (b. 19 September, 1979)<br><br>
         <img src="hrm.jpg" width="10%"><br><br>
         She was an English Muggle-born witch born to Mr and Mrs Granger.<br><br>
