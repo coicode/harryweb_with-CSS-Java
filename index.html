@@ -4,33 +4,11 @@
    <title>about Harry Potter!</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
+  <script src="javacolor.js"></script>
  </head>
  <body>
-   <input type="button" value="night" onclick="
-    var target = document.querySelector('.java');
-    if (this.value === 'night'){
-       target.style.backgroundColor = 'black';
-       target.style.color = 'white';
-       this.value = 'day';
-
-       var alist = document.querySelectorAll('#a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'powderblue';
-          i = i + 1;
-        }
-     } else {
-       target.style.backgroundColor = 'white';
-       target.style.color = 'black'
-       this.value = 'night';
-
-       var alist = document.querySelectorAll('#a');
-        var i = 0;
-        while(i < alist.length){
-          alist[i].style.color = 'gray';
-          i = i + 1;
-        }
-     }
+   <input id="night_day" type="button" value="night" onclick="
+      nightDayHandler(this);
     ">
    <h1 style="color:gray;"><a href="index.html" id="a">Harry Potter</a></h1>
   <div id="grid">
@@ -44,7 +22,7 @@
       <h2 style="display:inline;">W</h2>elcome to the fanmade harry potter website.<br>
       You can read the harry potter's story****, 3 major charactors, and some spells.<br>
       This web is not finished, so it will update properly.  This was my website's introduction, and now, enjoy it!<br><br><br>
-      ****from <a style="color:orange" href="https://harrypotter.fandom.com" target="_blank">harrypotter.fandom.com</a>
+      ****from <strong><a href="https://harrypotter.fandom.com" target="_blank">https://harrypotter.fandom.com</a></strong>
     </div>
    </div>
   </body>
