@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <style>
+    .btn{
+      text-decoration: none;
+      font-size: 120px;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      margin: 20px;
+      display: inline-block;
+      border-radius: 40px;
+      transition: all 0.1s;
+      font-family: 'Ubuntu', sans-serif;
+    }
+    .btn:active{
+      transform: translateY(12px);
+    }
+    .btn.blue{
+      background-color: #1f75d9;
+      border-bottom: 20px solid #165195;
+    }
+    .btn.blue:active{
+      border-bottom: 8px solid #165195;
+    }
+    .btn.red{
+      background-color: #ff521e;
+      border-bottom: 20px solid red;
+    }
+    .btn.red:active{
+      border-bottom: 8px solid red;
+    }
+    </style>
+  </head>
+  <body>
+    <a class="btn blue" href="#blue">blue</a>
+    <a class="btn red" href="#red">red</a>
+  </body>
+</html>
